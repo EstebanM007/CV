@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Esteban Alberto Martínez Palacios</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="export-btn" onclick="exportToPDF()">📄 Exportar PDF</button>
+    
+    <div class="container">
+        <div class="cv-content" id="cv-content">
+            <header class="header">
+                <h1 class="name">Esteban Alberto Martínez Palacios</h1>
+                <p class="title">Ingeniero Electrónico en Formación (10º semestre) | Técnico en Sistemas</p>
+                <div class="contact-info">
+                    <span><a href="mailto:esteban2mar@hotmail.com">esteban2mar@hotmail.com</a></span>
+                    <span>(320) 211-7805</span>
+                    <span><a href="https://linkedin.com/in/estebanmar007" target="_blank">LinkedIn</a></span>
+                    <span><a href="https://github.com/EstebanM007" target="_blank">GitHub</a></span>
+                    <span><a href="http://www.Repo.com" target="_blank">Portafolio</a></span>
+                    <span>Carrera 67 #167-79, Bogotá D.C., Colombia</span>
+                </div>
+            </header>
+
+            <section class="section">
+                <h2 class="section-title">Perfil Profesional</h2>
+                <div class="profile-text">
+                    Ingeniero Electrónico en formación con sólido trasfondo como Técnico en Sistemas. Experiencia en mantenimiento de equipos, resolución de problemas técnicos y optimización de procesos. Apasionado por la tecnología, versátil en la implementación de soluciones que mejoran la operatividad y eficientes prácticas de laboratorio.
+                </div>
+            </section>
+
+            <div class="main-content">
+                <div class="left-column">
+                    <section class="section">
+                        <h2 class="section-title">Experiencia Profesional</h2>
+                        
+                        <div class="experience-item">
+                            <h3 class="job-title">Practicante Soporte y Operación IT</h3>
+                            <p class="company">Generación XXI - Dirección de Experiencia, Soporte y Operación IT</p>
+                            <p class="date">Febrero - Agosto 2025</p>
+                            <ul class="responsibilities">
+                                <li>Participación en proyectos de IA bajo metodologías ágiles</li>
+                                <li>Desarrollo y pruebas en Python; aseguramiento de calidad (QA) y seguimiento en Azure DevOps</li>
+                                <li>Generación de casos de uso y prototipos de IA</li>
+                                <li>Colaboración en iniciativas de democratización de procesos y diseño de flujo To-Be para automatización</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3 class="job-title">Ingeniero Electrónico</h3>
+                            <p class="company">Universidad El Bosque - Proyectos Académicos y Semilleros</p>
+                            <p class="date">2020 - Actualidad</p>
+                            <ul class="responsibilities">
+                                <li>Desarrollo de proyectos con MATLAB, Multisim, EasyEDA, C++, Microcontroladores, SolidWorks</li>
+                                <li>Configuración y manejo de equipos de laboratorio para pruebas de hardware</li>
+                                <li>Proyecto de grado: activación de motores mediante señales de EOG y EEG</li>
+                                <li>Integrante Semillero de Robótica NoisyBotz: competencias nacionales</li>
+                                <li>Miembro Semillero de Comunicaciones Cerebrales: prácticas BCI</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3 class="job-title">Técnico en Sistemas</h3>
+                            <p class="date">2018 - 2020</p>
+                            <ul class="responsibilities">
+                                <li>Mantenimiento, reparación y configuración de equipos de cómputo y redes</li>
+                                <li>Instalación de sistemas operativos y software; optimización de rendimiento</li>
+                                <li>Diagnóstico y resolución de incidencias técnicas</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Habilidades Técnicas</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Lenguajes y Herramientas</h4>
+                                <p>MATLAB, Multisim, C, Python, Arduino, SolidWorks, OpenViBE, HTML, SQL, Java</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Laboratorio y Hardware</h4>
+                                <p>Configuración y pruebas de hardware, montaje de prototipos</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>TI y Redes</h4>
+                                <p>Soporte técnico, mantenimiento de equipos, instalación de software</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Metodologías</h4>
+                                <p>Agile, QA, gestión de proyectos con Azure DevOps</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="section">
+                        <h2 class="section-title">Educación</h2>
+                        
+                        <div class="education-item">
+                            <h3 class="job-title">Ingeniería Electrónica (10º semestre)</h3>
+                            <p class="company">Universidad El Bosque</p>
+                            <p class="date">Semilleros: Robótica (@NoisyBotz) y Comunicaciones Cerebrales</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h3 class="job-title">Digital IC Design Bootcamp</h3>
+                            <p class="company">Universidad de los Andes</p>
+                            <p class="date">2023</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h3 class="job-title">Cursos SENA</h3>
+                            <p class="company">Electrónica: Magnitudes, Leyes y Aplicaciones; Electricidad Básica</p>
+                            <p class="date">2019</p>
+                        </div>
+
+                        <div class="education-item">
+                            <h3 class="job-title">Bachiller Técnico en Sistemas</h3>
+                            <p class="company">Institución Educativa José María Córdoba</p>
+                            <p class="date">2018</p>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Idiomas</h2>
+                        <div class="languages">
+                            <div class="language">
+                                <strong>Español</strong><br>Nativo
+                            </div>
+                            <div class="language">
+                                <strong>Inglés</strong><br>Intermedio
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Referencias</h2>
+                        <div class="references">
+                            <div class="reference-category">
+                                <h4>Referencias Profesionales</h4>
+                                <div class="reference-item">
+                                    <strong>Yeimer José Pinedo Castro</strong><br>
+                                    Ingeniero Full Stack Senior<br>
+                                    Tel: (317) 226-3494
+                                </div>
+                                <div class="reference-item">
+                                    <strong>Carlos Andrés Prieto Garavito</strong><br>
+                                    Analista Experiencia Digital<br>
+                                    Tel: (321) 453-5886
+                                </div>
+                                <div class="reference-item">
+                                    <strong>David Salomón Luna Castro</strong><br>
+                                    Líder Digital Project DGA Manager<br>
+                                    Tel: (311) 556-7807
+                                </div>
+                            </div>
+                            
+                            <div class="reference-category">
+                                <h4>Referencias Personales</h4>
+                                <div class="reference-item">
+                                    <strong>Carmen Palacios</strong><br>
+                                    Programadora - Tel: (312) 734-1788
+                                </div>
+                                <div class="reference-item">
+                                    <strong>Marco Andrés Durán</strong><br>
+                                    Ingeniero Ambiental - Tel: (320) 805-6340
+                                </div>
+                                <div class="reference-item">
+                                    <strong>Olga Martínez</strong><br>
+                                    Pedagogía Infantil - Tel: (319) 210-4684
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+    
+</body>
+</html>
